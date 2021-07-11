@@ -1,2 +1,3 @@
-# SurvivalHouseMaster
-This Discord bot is for SurvivalHouse Minecraft server.
+# nullmcbot
+
+Discord bot to control Minecraft Pterodactyl servers

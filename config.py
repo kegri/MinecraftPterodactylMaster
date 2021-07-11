@@ -5,9 +5,9 @@ config_admin_users = [638039262952161282, 279937088219119617, 495794127682797579
 config_superadmin_users = [638039262952161282, 279937088219119617, 495794127682797579] # What users can use ALL commands
 for sadmin in config_superadmin_users:
     config_admin_users.append(sadmin)
-config_ping_time = 30 # How many seconds between checking the MC server
-config_discord_token = "ODYxNTUwNTIxNzM0MjY2OTEx.YOLbcw.nQeh2LDr8Bl6TnFiB33TnKUb4oo" # Bot Discord Token
-config_panel_token = "ODz3PiKt36Bog0BVx2ZT0HGx6kfNgbUKaBJvYtIvNyfnSuzN" # Panel API Token
+config_ping_time = 60 # How many seconds between checking the MC server
+config_discord_token = "" # Bot Discord Token
+config_panel_token = "" # Panel API Token
 config_panel_url = "http://survivalhouse.serv.gs/" # Look in your browser URL bar for this
 config_server_id = "8ac8d8bc" # Look in your browser URL bar for this, example: 025ce938
 config_custom_footer = "Server: play.survival.house | 1.17.1 (Caves+Cliffs)"

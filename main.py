@@ -24,7 +24,7 @@ from os.path import dirname, realpath
 
 #pclient = PterodactylClient(config_panel_url, config_panel_token)
 
-description = '''Bot written by Tony to start/stop the Minecraft server based on current activity and user requests for server uptime.'''
+description = '''Bot written by Kegrine to start/stop the Minecraft server based on current activity and user requests for server uptime.'''
 
 bot = commands.Bot(command_prefix=config_command_prefix,
                    description=description)

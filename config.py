@@ -23,4 +23,4 @@ config_reply_conflicting_motion = "This motion does not match the current motion
 config_reply_already_voted = "You have already voted on the current motion! Please wait for the current motion to expire or pass."
 config_reply_motion_pass = 'Motion **"{0}"** passed!'
 #
-config_bot_source_code = "https://github.com/kegri/SurvivalHouseMaster" # Change this if you have your own repo for the bot
+config_bot_source_code = "https://github.com/kegri/SurvivalHouseMaster"

@@ -1,3 +1,1 @@
-# nullmcbot
-
-Discord bot to control Minecraft Pterodactyl servers
+This Discord bot is for SurvivalHouse Minecraft server. Cogs from nullmcbot.

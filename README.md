@@ -1,8 +1,7 @@
 This Discord bot is for SurvivalHouse Minecraft server. Cogs from nullmcbot.
 
 # MIT License
-
-# Copyright (c) 2021 Çağrı Himmetoğlu
+Copyright (c) 2021 Çağrı Himmetoğlu
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

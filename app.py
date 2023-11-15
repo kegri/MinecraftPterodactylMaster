@@ -23,7 +23,6 @@ from os.path import dirname, realpath
 loop = asyncio.get_event_loop()
 
 #server = MinecraftServer(config_ip, config_port)
-
 #pclient = PterodactylClient(config_panel_url, config_panel_token)
 
 description = '''Bot written by Kegrine to start/stop the Minecraft server based on current activity and user requests for server uptime.'''

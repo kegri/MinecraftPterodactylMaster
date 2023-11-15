@@ -57,12 +57,12 @@ class panel_cog(commands.Cog):
             fn = functools.partial(self.pclient.client.get_server_utilization, config_server_id)
             self.server_status = await self.block_to_async(fn)
 
-            if self.server_status['state'] == "on":
+            if self.server_status['current_state'] == "running":
                 self.server_power_status = "online"
-            elif self.server_status['state'] == "off":
+            elif self.server_status['current_state'] == "offline":
                 self.server_power_status = "offline"
             else:
-                self.server_power_status = self.server_status['state']
+                self.server_power_status = self.server_status['current_state']
 
             self.logger.debug("Panel status succesfully recieved")
 
@@ -83,7 +83,7 @@ class panel_cog(commands.Cog):
 
     async def get_cpu_and_ram(self):
         if self.server_power_status == "online":
-            return self.server_status['cpu']['current'], self.server_status['memory']['current']
+            return self.server_status['resources']['cpu_absolute'], round(((self.server_status['resources']['memory_bytes']/1024)/1024)/1024, 2)
         else:
             return 0, 0
 
@@ -153,7 +153,7 @@ class panel_cog(commands.Cog):
             embed = discord.Embed(title="Server Status",
                                   color=config_embed_color)
 
-            filepath = "{0}/images/sad.png".format(dirname(realpath(__file__)))
+            filepath = "{0}/images/ganomuslogo.jpeg".format(dirname(realpath(__file__)))
             file = discord.File(filepath, "icon.png")
             embed.add_field(name="Access Denied",
                             value="Nah, son.", inline=False)
